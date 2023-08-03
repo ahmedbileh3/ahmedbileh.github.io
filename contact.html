@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="assets/dark_logo.svg" sizes="180x180" />
+    <link
+      rel="icon"
+      type="image/svg"
+      href="assets/light_logo.svg"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Ahmed Bileh's Portfolio - Contact</title>
+  </head>
+  <body>
+    <section id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/" class="nav__anchor">
+          <figure>
+            <img src="./assets/dark_logo.svg" class="nav__logo--img" alt="" />
+          </figure>
+          <span class="nav__logo--popper"> HOME </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/#About">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#Skills">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#Projects">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br />
+    </section>
+
+    <!--* CONTACT ME FORM -->
+    <div id="contact" class="container mt-5">
+      <h1>Contact Me</h1>
+      <img
+        src="assets/Gmail_Icon_(2013-2020).svg.png"
+        class="mail__logo"
+        alt=""
+      />
+      <br />
+      <p style="text-align: center">
+        - IF YOU HAVE ANY <b> QUESTIONS/ENQUIRIES</b>, FEEL FREE TO SEND ME A
+        MESSAGE -
+      </p>
+      <form class="row" action="https://formspree.io/f/xwkjewjq" method="POST">
+        <div class="form-group col-lg-12">
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group col-lg-12">
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group col-lg-12">
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group col-lg-12">
+          <textarea
+            name="message"
+            placeholder="Enter Message"
+            class="form-control"
+            rows="6"
+            required
+            spellcheck="true"
+          ></textarea>
+        </div>
+        <div class="form-group col-lg-12">
+          <button type="submit" class="btn btn-dark btn-block loginbtn">
+            Submit
+          </button>
+        </div>
+        <input type="hidden" name="_to" value="ahmedbileh3@gmail.com" />
+      </form>
+    </div>
+
+    <!--*FOOTER-->
+    <footer>
+      <div class="row footer__row">
+        <a href="#contact" class="footer__anchor">
+          <figure class="footer__logo">
+            <img
+              src="./assets/light_logo.svg"
+              class="footer__logo--img"
+              alt=""
+            />
+          </figure>
+        </a>
+        <div class="footer__social--list">
+          <a
+            href="https://github.com/ahmedbileh3"
+            target="_blank"
+            rel="noopener"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/ahmed-bileh/"
+            target="_blank"
+            rel="noopener"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >LinkedIn</a
+          >
+          <a
+            href="mailto:ahmedbileh3@gmail.com"
+            target="_blank"
+            rel="noopener"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Email</a
+          >
+          <a
+            href="./assets/AHMED%20BILEH%20CV.pdf"
+            target="_blank"
+            rel="noopener"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            >Resume</a
+          >
+        </div>
+        <div class="footer__copyright">Copyright © 2022 Ahmed Bileh</div>
+      </div>
+    </footer>
+  </body>
+</html>
